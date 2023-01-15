@@ -234,7 +234,7 @@ span.experience-year {
 /* ------------- Some Facts Section Styles ---------- */
 
 .some-facts-description {
-    padding-top: 25px;
+    padding-top: 10px;
     padding-bottom: 25px;
 }
 
@@ -346,9 +346,11 @@ textarea {
 
 
 
-/* ======================== END ========================= */
+/* =========================== END ========================= */
 
-/* =========== Responsive for Mobile Device =========== */
+
+
+/* ==================================== Responsive Styles for Mobile Device ============================= */
 
 @media screen and (max-width:576px) {
 
@@ -375,6 +377,7 @@ textarea {
     .menu-items li {
         display: block;
         margin-left: 0px;
+        margin-bottom: 10px;
         text-align: center;
 
     }
@@ -480,7 +483,7 @@ textarea {
 
 }
 
-/* ========================= Responsive for Tablet Device ======================== */
+/* ======================================= Responsive Styles for Tablet Device ===================================== */
 
 @media screen and (min-width:577px) and (max-width:992px) {
 
