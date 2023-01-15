@@ -19,8 +19,8 @@
     background: #FF900E;
     border-style: none;
     border-radius: 8px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .primary-color {
@@ -86,6 +86,7 @@ section {
 
 .header-banner-container {
     padding-top: 100px;
+    padding-bottom: 0px;
 }
 
 .banner-contents {
@@ -98,11 +99,16 @@ section {
     font-size: 45px;
     font-weight: 700;
     color: #131313;
-    line-height: 75px;
+    line-height: 50px;
+}
+
+p.banner-description {
+    padding: 10px;
 }
 
 .banner-image {
     text-align: center;
+    margin-top: 15px;
 }
 
 .banner-image img {
@@ -154,6 +160,7 @@ section {
 .loving-features-items-info>h3 {
     border-left: 5px solid #FF900E;
     padding-left: 21px;
+    width: 70%;
 }
 
 .loving-features-description {
@@ -180,7 +187,7 @@ section {
 }
 
 .loving-feature-image {
-    width: 100%;
+    width: 605px;
 }
 
 .loving-feature-experience {
@@ -261,7 +268,7 @@ span.experience-year {
 
 .sponsor-logo>img {
     width: 150px;
-    height: 50px;
+    height: auto;
     filter: grayscale(100%);
 }
 
@@ -275,21 +282,33 @@ span.experience-year {
     grid-gap: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
+    justify-items: center;
+}
+
+p.contact-info {
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+.contact-icon {
+    color: #FF900E;
+    margin-right: 16px;
 }
 
 form input,
 textarea {
-    width: 80%;
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
     border: 1px solid #606060;
 }
 
-input.btn-primary.btn-send {
+.btn-send {
     width: 200px;
     margin-top: 0px;
+    padding: 12px;
 }
 
 /* ------------- Footer Section Styles ----------  */
@@ -306,21 +325,36 @@ input.btn-primary.btn-send {
 
 
 
-
+/* ======================== END ========================= */
 
 /* =========== Responsive for Mobile Device =========== */
 
 @media screen and (max-width:576px) {
 
-
-    .header-container, .our-features-container, .loving-features-items-container, .some-facts-container, .our-sponsor-container, .contact-container {
+    .header-container,
+    .our-features-container,
+    .loving-features-items-container,
+    .some-facts-container,
+    .our-sponsor-container,
+    .contact-container {
         padding: 30px;
     }
 
     /* Mobile Header and Banner styles */
-   
+
+    .nav-container {
+        flex-direction: column;
+    }
+
     .nav-logo {
         font-size: 30px;
+    }
+
+    .menu-items li {
+        display: block;
+        margin-left: 0px;
+        text-align: center;
+
     }
 
     .header-banner-container {
@@ -332,7 +366,7 @@ input.btn-primary.btn-send {
     }
 
     .banner-title {
-        font-size: 36px;
+        font-size: 30px;
         line-height: 40px;
     }
 
@@ -359,6 +393,16 @@ input.btn-primary.btn-send {
     .loving-features-items-container {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 50px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .loving-features-items-info>h3 {
+        width: 90%;
+    }
+
+    .loving-feature-image {
+        width: 100%;
     }
 
     .loving-feature-experience {
@@ -394,6 +438,148 @@ input.btn-primary.btn-send {
     .contact-container {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 50px;
+    }
+
+    p.contact-info {
+        font-size: 16px;
+    }
+
+    form input,
+    textarea {
+        width: 80% !important;
+        padding: 15px;
+    }
+
+    .footer-container {
+        padding: 25px;
+        margin-bottom: 0px;
+        border-radius: 0;
+    }
+
+}
+
+/* ========================= Responsive for Tablet Device ======================== */
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .header-container,
+    .our-features-container,
+    .loving-features-items-container,
+    .some-facts-container,
+    .our-sponsor-container,
+    .contact-container {
+        padding: 30px;
+    }
+
+    /* Tablet Header and Banner styles */
+
+    .nav-logo {
+        font-size: 40px;
+    }
+
+    .menu-items li {
+        margin-left: 0px;
+        padding: 10px 15px;
+
+    }
+
+    .header-banner-container {
+        padding-top: 75px;
+    }
+
+    .banner-contents {
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .banner-image img {
+        width: 90%;
+    }
+
+    /* Tablet Our Features Styles */
+
+    .main-body-container {
+        width: 100%;
+    }
+
+    .our-features-container {
+        flex-direction: column;
+    }
+
+    .our-features-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Tablet Loving Feature Items Style */
+
+    .loving-features-items-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+
+    .loving-feature-image {
+        width: 95%;
+    }
+
+    .loving-feature-experience {
+        padding: 30px;
+        bottom: 15px;
+        left: 0;
+    }
+
+    /* Tablet Some Facts Styles  */
+
+
+    .some-facts-description {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .facts-achievement-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* Tablet Our Sponsors Styles */
+
+    .sponsors-logo-container {
+        gap: 50px;
+        align-items: center;
+    }
+
+    .sponsor-logo>img {
+        width: 100px;
+        height: auto;
+    }
+
+    /* Tablet Contact Section Styles */
+    .contact-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+
+    p.contact-info {
+        font-size: 18px;
+    }
+
+    form input,
+    textarea {
+        width: 80% !important;
+        padding: 15px;
+    }
+    .footer-container {
+        padding: 25px;
+        margin-bottom: 0px;
+        border-radius: 0;
     }
 
 }
