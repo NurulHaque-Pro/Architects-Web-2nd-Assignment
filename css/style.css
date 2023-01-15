@@ -449,6 +449,9 @@ textarea {
         bottom: 30px;
         left: 0;
     }
+    span.experience-year {
+        font-size: 35px;
+    }
 
     /* Mobile Some Facts Styles  */
 
@@ -518,12 +521,11 @@ textarea {
     /* Tablet Header and Banner styles */
 
     .nav-logo {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .menu-items li {
         margin-left: 0px;
-        padding: 10px 15px;
 
     }
 
@@ -574,7 +576,7 @@ textarea {
 
     .loving-feature-experience {
         padding: 30px;
-        bottom: 15px;
+        bottom: 30px;
         left: 0;
     }
 
