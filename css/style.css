@@ -52,7 +52,8 @@ p {
     font-weight: 400;
     line-height: 25px;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -89,11 +90,13 @@ section {
     font-size: 18px;
 
 }
-.menu-items li > a{
+
+.menu-items li>a {
     color: #424242;
     padding: 10px 20px;
 }
-.menu-items li > a:hover{
+
+.menu-items li>a:hover {
     color: #FF900E;
 }
 
@@ -161,6 +164,7 @@ p.banner-description {
     width: 342px;
     height: 342px;
 }
+
 p.our-feature-description {
     margin-top: 10px;
     padding-bottom: 10px;
@@ -201,6 +205,15 @@ p.our-feature-description {
     font-size: 20px;
     font-weight: 600;
     color: #131313;
+}
+
+p.feature-list-info {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
 }
 
 .loving-features-items-img {
@@ -278,8 +291,9 @@ span.experience-year {
 .sponsor-description {
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
-
 .sponsors-logo-container {
     display: flex;
     gap: 90px;
@@ -453,6 +467,11 @@ textarea {
 
     /* Mobile Our Sponsors Styles */
 
+    .sponsor-description {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
     .sponsors-logo-container {
         flex-direction: column;
         gap: 50px;
@@ -576,6 +595,11 @@ textarea {
 
     /* Tablet Our Sponsors Styles */
 
+    .sponsor-description {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
     .sponsors-logo-container {
         gap: 50px;
         align-items: center;
@@ -601,6 +625,7 @@ textarea {
         width: 80% !important;
         padding: 15px;
     }
+
     .footer-container {
         padding: 25px;
         margin-bottom: 0px;
